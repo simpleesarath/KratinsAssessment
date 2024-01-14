@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fitness Tracker</title>
+</head>
+<body>
+    <header>
+        <h1>Fitness Tracker</h1>
+    </header>
+    <main>
+        <section id="stepCounter">
+            <h2>Step Counter</h2>
+            <p>Total Steps: <span id="totalSteps">0</span></p>
+            <button onclick="incrementSteps()">Add Step</button>
+            <button onclick="incrementrounds()">Add Rounds</button>
+        </section>
+        
+        <section id="workoutLog">
+            <h2>Workout Log</h2>
+            <textarea id="logTextarea" placeholder="Enter your workout log here..."></textarea>
+            <button onclick="saveWorkoutLog()">Save Log</button>
+        </section>
+
+        <section id="healthTips">
+            <h2>Health Tips</h2>
+            <ul>
+                <li>Stay hydrated by drinking plenty of water.</li>
+                <li>Eat a balanced diet rich in fruits and vegetables.</li>
+                <li>Get at least 7-8 hours of sleep each night.</li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
